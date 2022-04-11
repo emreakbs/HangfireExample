@@ -14,8 +14,12 @@ namespace NewsApp.Hangfire.Controllers
     {
         private readonly IRecurringJobManager _reccuringJobManager;
         private readonly ILocalRecuringJobManager _localReccuringJobManager;
-        public JobController(ILocalRecuringJobManager localReccuringJobManager, IRecurringJobManager recurringJobManager)
+        private readonly ILocalBackgroundJobManager _localBackgroundJobManager;
+        public JobController(ILocalRecuringJobManager localReccuringJobManager,
+                             ILocalBackgroundJobManager localBackgroundJobManager,
+                             IRecurringJobManager recurringJobManager)
         {
+            _localBackgroundJobManager = localBackgroundJobManager;
             _localReccuringJobManager = localReccuringJobManager;
             _reccuringJobManager = recurringJobManager;
         }
@@ -27,7 +31,21 @@ namespace NewsApp.Hangfire.Controllers
         public IActionResult CreateConsoleWriteJob()
         {
             _reccuringJobManager.AddOrUpdate("CreateConsoleWriteJob", () => _localReccuringJobManager.ReccuringJob(), Cron.MinuteInterval(2));
-            return StatusCode(201,"Created !");
+            return StatusCode(201, "Created !");
+        }
+        [HttpGet("BackgroundJobEnqueue")]
+        public IActionResult BackgroundJobEnqueue()
+        {
+            var jobId = _localBackgroundJobManager.Enqueue();
+            _localBackgroundJobManager.ContinueWithEnqueue(jobId);
+            return StatusCode(200, "OK !");
+        }
+        [HttpGet("BackgroundJobSchedule")]
+        public IActionResult BackgroundJobSchedule()
+        {
+            var jobId = _localBackgroundJobManager.Schedule();
+            _localBackgroundJobManager.ContinueWithSchedule(jobId);
+            return StatusCode(200, "OK !");
         }
     }
 }

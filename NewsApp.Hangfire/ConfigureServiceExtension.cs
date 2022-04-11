@@ -19,6 +19,7 @@ namespace NewsApp.Hangfire
         public static void AddScoped(this IServiceCollection services)
         {
             services.AddScoped<ILocalRecuringJobManager, LocalReccuringJobManager>();
+            services.AddScoped<ILocalBackgroundJobManager, LocalBackgroundJobManager>();
         }
     }
 }

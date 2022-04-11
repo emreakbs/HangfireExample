@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "E6yOxoM6J65IeXDdnSSju9hYmuAWWiMCRAB3eoXymBLXQ6Dqf21RHAB+mr4vGVIASizoUGGEfPUb7rD42PAeZg==",
+  "dgSpecHash": "M6vQEbP4M78Ux2W9XWO7R4S+6IIdk07jASgRAiyr5ZyjI6WW4VV8b9uJNMM+Cq8PYpLAHdYDnFugIrtt6V6I0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\emre.akbas\\Desktop\\Github\\HangfireExample\\NewsApp.Hangfire.Manager\\NewsApp.Hangfire.Manager.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\hangfire.core\\1.7.0\\hangfire.core.1.7.0.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
