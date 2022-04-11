@@ -1,0 +1,6 @@
+C:\Users\emre.akbas\Desktop\Github\NewsApp.Hangfire\NewsApp.Hangfire\obj\Debug\net6.0\NewsApp.Hangfire.csproj.AssemblyReference.cache
+C:\Users\emre.akbas\Desktop\Github\NewsApp.Hangfire\NewsApp.Hangfire\obj\Debug\net6.0\NewsApp.Hangfire.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emre.akbas\Desktop\Github\NewsApp.Hangfire\NewsApp.Hangfire\obj\Debug\net6.0\NewsApp.Hangfire.AssemblyInfoInputs.cache
+C:\Users\emre.akbas\Desktop\Github\NewsApp.Hangfire\NewsApp.Hangfire\obj\Debug\net6.0\NewsApp.Hangfire.AssemblyInfo.cs
+C:\Users\emre.akbas\Desktop\Github\NewsApp.Hangfire\NewsApp.Hangfire\obj\Debug\net6.0\NewsApp.Hangfire.csproj.CoreCompileInputs.cache
+C:\Users\emre.akbas\Desktop\Github\NewsApp.Hangfire\NewsApp.Hangfire\obj\Debug\net6.0\NewsApp.Hangfire.MvcApplicationPartsAssemblyInfo.cache

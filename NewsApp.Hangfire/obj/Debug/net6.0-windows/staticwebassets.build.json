@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Jz8WhtSDY2HtLrcG0SGLSDyn+33c+YiEvmXNoOmvhog=",
+  "Source": "NewsApp.Hangfire",
+  "BasePath": "_content/NewsApp.Hangfire",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

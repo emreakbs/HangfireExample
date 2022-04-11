@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  newsapp.hangfire:
+    image: newsapphangfire:dev
+    container_name: NewsApp.Hangfire
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "NewsApp.Hangfire"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_newsapp.hangfire$
+    volumes:
+      - C:\Users\emre.akbas\Desktop\Github\HangfireExample\NewsApp.Hangfire:/app
+      - C:\Users\emre.akbas\Desktop\Github\HangfireExample:/src
+      - C:\Users\emre.akbas\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_newsapp.hangfire$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_newsapp.hangfire$ \"/src/../NewsApp.Hangfire/NewsApp.Hangfire/bin/Debug/net6.0/NewsApp.Hangfire.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

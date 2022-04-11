@@ -1,0 +1,28 @@
+services:
+  newsapp.hangfire:
+    build:
+      context: C:\Users\emre.akbas\Desktop\Github\HangfireExample
+      dockerfile: NewsApp.Hangfire/Dockerfile
+    depends_on:
+      newsapphangfiremssql:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: newsapphangfire
+    ports:
+    - published: 19000
+      target: 80
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\emre.akbas\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+  newsapphangfiremssql:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: NewsApp@2022!
+    image: mcr.microsoft.com/mssql/server
+    ports:
+    - published: 19001
+      target: 1433
+version: '3.4'

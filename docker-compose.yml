@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  newsapp.hangfire:
+    image: ${DOCKER_REGISTRY-}newsapphangfire
+    build:
+      context: .
+      dockerfile: NewsApp.Hangfire/Dockerfile
+    ports:
+       - "19000:80"
+    depends_on:
+      - newsapphangfiremssql
+  newsapphangfiremssql:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "NewsApp@2022!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "19001:1433"

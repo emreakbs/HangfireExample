@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "kr74PJJyxrRuiTytBHg9puIuf6sGB5zpdooQxmnF+Zv8d/By2HXII3E/RU92PTw/UclZqs7e4t7l1FlndI0aqg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emre.akbas\\Desktop\\Github\\HangfireExample\\NewsApp.Hangfire\\NewsApp.Hangfire.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\hangfire.aspnetcore\\1.7.28\\hangfire.aspnetcore.1.7.28.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\hangfire.core\\1.7.28\\hangfire.core.1.7.28.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\hangfire.sqlserver\\1.7.28\\hangfire.sqlserver.1.7.28.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\microsoft.win32.registry\\4.4.0\\microsoft.win32.registry.4.4.0.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\system.data.sqlclient\\4.4.0\\system.data.sqlclient.4.4.0.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\system.security.accesscontrol\\4.4.0\\system.security.accesscontrol.4.4.0.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\system.security.principal.windows\\4.4.0\\system.security.principal.windows.4.4.0.nupkg.sha512",
+    "C:\\Users\\emre.akbas\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
